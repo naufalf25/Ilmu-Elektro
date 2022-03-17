@@ -2,7 +2,7 @@
 
 ## Link
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/naufalf25/Ilmu-Elektro]
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Dibuat Dengan
