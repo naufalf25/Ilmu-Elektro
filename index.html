@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/icon.png">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <title>Beranda | Ilmu Elektro</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-head">
+                <div class="logo-img">
+                    <a href="index.html"><img class="logo" src="./assets/images/head-logowhite.png" alt="logo"></a>
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="theory.html">Materi</a></li>
+                        <li><a href="component.html">Komponen</a></li>
+                        <li><a href="circuit.html">Rangkaian Elektronika</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Ilmu Elektro</h1>
+                    <p>Belajar Bersama</p>
+                    <a href="#about" class="button">Tentang Kami</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="title">
+                <div class="title-text">
+                    <h2>Selamat Datang di Website Ilmu Elektro!</h2>
+                    <p>Disini Anda bisa menemukan berbagai materi yang berkaitan dengan Teknik Elektro.
+                    Anda juga dapat menemukan beberapa referensi rangkaian elektronika. Selain itu,
+                    Anda juga dapat <em>request</em> materi yang menurut Anda belum ada disini dan perlu
+                    dibahas bersama.</p>
+                    <p>Semoga Anda dapat menemukan apa yang Anda perlukan disini, Terima Kasih!</p>
+                </div>
+                <div class="title-img">
+                    <img src="./assets/images/title-img.jpg" alt="title image">
+                </div>
+            </div>
+            <h2 class="quote-head"><em>Quote Of The Day</em></h2>
+            <div class="quote-slideshow-container">
+                <div class="quote">
+                    <q>Bila kau tak tahan lelahnya belajar, maka kau harus tahan menanggung perihnya kebodohan</q>
+                    <p class="author">- Imam Syafi'i</p>
+                </div>
+                <div class="quote">
+                    <q>Hiduplah seakan-akan kau akan mati besok. Belajarlah seakan-akan kau akan hidup selamanya</q>
+                    <p class="author">- Mahatma Gandhi</p>
+                </div>
+                <div class="quote">
+                    <q>Belajar tanpa berpikir itu tidaklah berguna, tapi berpikir tanpa belajar itu sangatlah berbahaya</q>
+                    <p class="author">- Soekarno</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="main-content">
+                <h2>Apa saja yang ada di Website ini?</h2>
+                <div class="card-container">
+                    <div class="index-card">
+                        <div class="face face1">
+                            <div class="index-cardcontent">
+                                <img src="./assets/images/materi.jpg">
+                                <h3>Materi</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="index-cardcontent">
+                                <p>Berisikan materi yang membahas tentang elektro</p>
+                                <a href="#">Lebih Lengkap<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-card">
+                        <div class="face face1">
+                            <div class="index-cardcontent">
+                                <img src="./assets/images/Component.jpg">
+                                <h3>Komponen</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="index-cardcontent">
+                                <p>Berisikan bermacam-macam komponen elektro yang ada</p>
+                                <a href="#">Lebih Lengkap<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-card">
+                        <div class="face face1">
+                            <div class="index-cardcontent">
+                                <img src="./assets/images/Circuit.jpg">
+                                <h3>Rangkaian Elektronika</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="index-cardcontent">
+                                <p>Berisikan bermacam-macam rangkaian elektronika yang kami buat sendiri</p>
+                                <a href="#">Lebih Lengkap<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-suggestions">
+                <h2>Form Kritik dan Saran</h2>
+                <p class="form-title">Anda bisa memberikan kritik dan saran Anda pada form berikut ini untuk pengembangan website yang
+                lebih baik lagi.</p>
+                <div class="formsuggest">
+                    <form action="https://formsubmit.co/opal.farras@gmail.com" method="POST" onsubmit="successfull()">
+                        <div class="formgroup">
+                            <label for="fname" class="label">Nama Depan</label>
+                            <input id="fname" type="text" name="NamaDepan" class="form-control" placeholder="Masukkan Nama Depan Anda" required />
+                        </div>
+                        <div class="formgroup">
+                            <label for="lname" class="label">Nama Belakang</label>
+                            <input id="lname" type="text" name="NamaBelakang" class="form-control" placeholder="Masukkan Nama Belakang Anda" />
+                        </div>
+                        <div class="formgroup">
+                            <label for="email" class="label">E-mail</label>
+                            <input id="email" type="email" id="email" class="form-control" placeholder="Masukkan E-mail Anda" required />
+                        </div>
+                        <div class="formgroup">
+                            <p>Kritik dan Saran Untuk Website Ini :</p>
+                            <textarea id="comment" class="input-textarea" name="Pesan" placeholder="Masukkan Kritik dan Saran Anda Disini....."></textarea>
+                        </div>
+                        <div class="formgroup">
+                            <button type="submit" class="submit-btn">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="about">
+            <div class="footer-section">
+                <p class="footer-title">Tentang Kami</p>
+                <div class="footer-flex">
+                    <div class="address">
+                        <p>Alamat :</p>
+                        <p>Blotongan, Sidorejo, Kota Salatiga, Jawa Tengah</p>
+                        <p>50715</p>
+                        <br>
+                        <p>Google Maps :</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.94678771383!2d110.46206577452897!3d-7.326167114588763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a787e692c9c69%3A0xf6a53e23a0c4462c!2sSalatiga%2C%20Kota%20Salatiga%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1647414108794!5m2!1sid!2sid" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="socmed">
+                        <p>Kontak Kami :</p><br>
+                        <a href="https://web.facebook.com/muhammad.naufalfarras.52" target="_blank">
+                            <i class="fab fa-facebook-square"></i>Facebook<i class="fas fa-chevron-right arrow"></i>
+                        </a>
+                        <a href="https://www.instagram.com/naufal_railfans25/" target="_blank">
+                            <i class="fab fa-instagram"></i>Instagram<i class="fas fa-chevron-right arrow"></i>
+                        </a>
+                        <a href="mailto:opal.farras@gmail.com" target="_blank">
+                            <i class="fas fa-envelope"></i>E-mail<i class="fas fa-chevron-right arrow"></i>
+                        </a>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="./assets/images/head-logowhite.png">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2022 Muhammad Naufal Farras</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/script/script.js"></script>
+    </body>
+</html>
